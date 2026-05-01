@@ -5,6 +5,7 @@ export type Project = {
   whyItMatters: string;
   image: string;
   imageAlt: string;
+  imageFit?: "cover" | "contain";
   stack: string[];
   github: string;
   live?: string;
@@ -31,6 +32,7 @@ export const projects: Project[] = [
     image:
       "https://world-cup-success-analysis.vercel.app/charts/03_avg_goal_difference_by_stage.png",
     imageAlt: "Average World Cup goal difference by tournament stage reached.",
+    imageFit: "contain",
     stack: ["Python", "DuckDB SQL", "pandas", "pytest", "Plotly", "Streamlit", "Vercel"],
     github: "https://github.com/ymbawa26/world-cup-success-analysis",
     live: "https://world-cup-success-analysis.vercel.app",

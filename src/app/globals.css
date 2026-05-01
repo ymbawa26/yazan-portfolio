@@ -834,6 +834,17 @@ blockquote {
   transform: scale(1.01);
 }
 
+.project-image-frame--contain {
+  background: rgba(243, 239, 228, 0.88);
+}
+
+.project-image-frame--contain img {
+  object-fit: contain;
+  padding: clamp(14px, 2vw, 22px);
+  filter: saturate(0.95) contrast(1.02);
+  transform: none;
+}
+
 .project-image-frame::after {
   position: absolute;
   inset: 0;

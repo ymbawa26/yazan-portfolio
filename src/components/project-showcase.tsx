@@ -16,7 +16,7 @@ export function ProjectShowcase() {
         const isExpanded = expanded === project.title;
         return (
           <article key={project.title} className={cn("project-story", `project-card--${project.accent}`)}>
-            <div className="project-image-frame">
+            <div className={cn("project-image-frame", project.imageFit === "contain" && "project-image-frame--contain")}>
               <Image src={project.image} alt={project.imageAlt} fill sizes="(max-width: 980px) 100vw, 48vw" />
             </div>
             <div className="project-story-copy">
