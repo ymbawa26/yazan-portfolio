@@ -5,7 +5,6 @@ export type Project = {
   whyItMatters: string;
   image: string;
   imageAlt: string;
-  imageFit?: "cover" | "contain";
   stack: string[];
   github: string;
   live?: string;
@@ -22,24 +21,6 @@ export type Project = {
 };
 
 export const projects: Project[] = [
-  {
-    title: "Predicting World Cup Success",
-    repoName: "world-cup-success-analysis",
-    description:
-      "A SQL and Python analytics project that investigates which measurable factors are most associated with deep FIFA World Cup runs.",
-    whyItMatters:
-      "It shows how I handle a real analytical question end to end: public data, cleaning, SQL feature engineering, leakage-safe modeling, testing, visualization, and careful conclusions.",
-    image:
-      "https://world-cup-success-analysis.vercel.app/charts/03_avg_goal_difference_by_stage.png",
-    imageAlt: "Average World Cup goal difference by tournament stage reached.",
-    imageFit: "contain",
-    stack: ["Python", "DuckDB SQL", "pandas", "pytest", "Plotly", "Streamlit", "Vercel"],
-    github: "https://github.com/ymbawa26/world-cup-success-analysis",
-    live: "https://world-cup-success-analysis.vercel.app",
-    primaryAction: { label: "Open Vercel", href: "https://world-cup-success-analysis.vercel.app" },
-    secondaryAction: { label: "View GitHub", href: "https://github.com/ymbawa26/world-cup-success-analysis" },
-    accent: "steel",
-  },
   {
     title: "WorldGuess",
     repoName: "worldguess",
