@@ -20,7 +20,12 @@ test("project and contact actions lead somewhere", async ({ page }) => {
   await page.goto("/projects");
 
   await expect(page.getByRole("link", { name: /Open Vercel/ }).first()).toHaveAttribute("href", /vercel\.app/);
-  await expect(page.getByRole("link", { name: /Open Vercel/ })).toHaveCount(5);
+  await expect(page.getByRole("heading", { name: "Profits and Layoffs" })).toBeVisible();
+  await expect(page.getByRole("link", { name: /Open Vercel/ })).toHaveCount(6);
+  await expect(page.getByRole("link", { name: /Open Vercel/ }).first()).toHaveAttribute(
+    "href",
+    "https://profits-and-layoffs.vercel.app",
+  );
   await expect(page.getByRole("link", { name: /Try WildWhere/ })).toHaveAttribute("href", /github\.io/);
 
   await page.goto("/contact");

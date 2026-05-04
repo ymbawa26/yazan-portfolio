@@ -22,6 +22,23 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: "Profits and Layoffs",
+    repoName: "profits-and-layoffs",
+    description:
+      "A portfolio-ready analytics engineering project that connects tech layoff events with SEC financial statement data to test whether cuts align with financial weakness or strategic cost control.",
+    whyItMatters:
+      "It turns a headline-heavy labor question into a reproducible SQL, Python, statistics, CI, and dashboard workflow with careful non-causal interpretation.",
+    image:
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=3840&q=85",
+    imageAlt: "A laptop showing financial analytics charts in a clean workspace.",
+    stack: ["Python", "DuckDB", "SQL", "SEC Data", "statsmodels", "pytest", "Streamlit", "Vercel"],
+    github: "https://github.com/ymbawa26/profits-and-layoffs",
+    live: "https://profits-and-layoffs.vercel.app",
+    primaryAction: { label: "Open Vercel", href: "https://profits-and-layoffs.vercel.app" },
+    secondaryAction: { label: "View GitHub", href: "https://github.com/ymbawa26/profits-and-layoffs" },
+    accent: "ice",
+  },
+  {
     title: "WorldGuess",
     repoName: "worldguess",
     description:
