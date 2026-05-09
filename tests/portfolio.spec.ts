@@ -8,6 +8,7 @@ test("portfolio loads core sections and interactions", async ({ page }) => {
   await expect(page).toHaveURL(/\/projects/);
   await expect(page.locator("#projects")).toBeInViewport();
   await expect(page.getByRole("heading", { name: "WorldGuess" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Character RNN Text Generation" })).toBeVisible();
 
   await page.goto("/skills");
   await expect(page).toHaveURL(/\/skills/);
@@ -20,6 +21,11 @@ test("project and contact actions lead somewhere", async ({ page }) => {
   await page.goto("/projects");
 
   await expect(page.getByRole("link", { name: /Open Vercel/ }).first()).toHaveAttribute("href", /vercel\.app/);
+  await expect(page.getByRole("link", { name: "Open GitHub" }).first()).toHaveAttribute(
+    "href",
+    "https://github.com/ymbawa26/cs443-project-4-rnn",
+  );
+  await expect(page.getByRole("heading", { name: "Word Embeddings and SOMs" })).toBeVisible();
   await expect(page.getByRole("heading", { name: "Profits and Layoffs" })).toBeVisible();
   await expect(page.getByRole("link", { name: /Open Vercel/ })).toHaveCount(6);
   await expect(page.getByRole("link", { name: /Open Vercel/ }).first()).toHaveAttribute(

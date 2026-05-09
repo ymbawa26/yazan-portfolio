@@ -22,6 +22,47 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: "Character RNN Text Generation",
+    repoName: "cs443-project-4-rnn",
+    description:
+      "A from-scratch CS 443 recurrent neural network project that preprocesses character-level text, implements a custom GRU layer, and trains GRU RNNs to generate text.",
+    whyItMatters:
+      "It shows the mechanics behind sequence models directly: custom gates, recurrent state, padding masks, temporal cross entropy, and notebook-validated text generation.",
+    image:
+      "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=3840&q=85",
+    imageAlt: "Code on a monitor suggesting neural network implementation work.",
+    stack: ["Python", "TensorFlow", "RNN", "GRU", "Jupyter", "NLP"],
+    github: "https://github.com/ymbawa26/cs443-project-4-rnn",
+    primaryAction: { label: "Open GitHub", href: "https://github.com/ymbawa26/cs443-project-4-rnn" },
+    secondaryAction: {
+      label: "View Notebook",
+      href: "https://github.com/ymbawa26/cs443-project-4-rnn/blob/main/rnn_text_generation.ipynb",
+    },
+    accent: "steel",
+  },
+  {
+    title: "Word Embeddings and SOMs",
+    repoName: "cs443-project-3-word-embeddings-som",
+    description:
+      "A CS 443 machine learning project implementing Skip-gram word embeddings, text preprocessing, similarity search, word-cloud analysis, and self-organizing maps.",
+    whyItMatters:
+      "It connects representation learning with interpretable visualization, moving from raw text to embedding spaces and SOM-style structure.",
+    image:
+      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=3840&q=85",
+    imageAlt: "A network-like digital visualization representing learned structure.",
+    stack: ["Python", "TensorFlow", "Skip-gram", "SOM", "Jupyter", "NLP"],
+    github: "https://github.com/ymbawa26/cs443-project-3-word-embeddings-som",
+    primaryAction: {
+      label: "Open GitHub",
+      href: "https://github.com/ymbawa26/cs443-project-3-word-embeddings-som",
+    },
+    secondaryAction: {
+      label: "View Notebook",
+      href: "https://github.com/ymbawa26/cs443-project-3-word-embeddings-som/blob/main/word_embeddings.ipynb",
+    },
+    accent: "sage",
+  },
+  {
     title: "Profits and Layoffs",
     repoName: "profits-and-layoffs",
     description:
