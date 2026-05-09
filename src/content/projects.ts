@@ -33,11 +33,9 @@ export const projects: Project[] = [
     imageAlt: "Code on a monitor suggesting neural network implementation work.",
     stack: ["Python", "TensorFlow", "RNN", "GRU", "Jupyter", "NLP"],
     github: "https://github.com/ymbawa26/cs443-project-4-rnn",
-    primaryAction: { label: "Open GitHub", href: "https://github.com/ymbawa26/cs443-project-4-rnn" },
-    secondaryAction: {
-      label: "View Notebook",
-      href: "https://github.com/ymbawa26/cs443-project-4-rnn/blob/main/rnn_text_generation.ipynb",
-    },
+    live: "https://ymbawa26.github.io/cs443-project-4-rnn/",
+    primaryAction: { label: "Open Demo", href: "https://ymbawa26.github.io/cs443-project-4-rnn/" },
+    secondaryAction: { label: "View GitHub", href: "https://github.com/ymbawa26/cs443-project-4-rnn" },
     accent: "steel",
   },
   {
@@ -52,14 +50,9 @@ export const projects: Project[] = [
     imageAlt: "A network-like digital visualization representing learned structure.",
     stack: ["Python", "TensorFlow", "Skip-gram", "SOM", "Jupyter", "NLP"],
     github: "https://github.com/ymbawa26/cs443-project-3-word-embeddings-som",
-    primaryAction: {
-      label: "Open GitHub",
-      href: "https://github.com/ymbawa26/cs443-project-3-word-embeddings-som",
-    },
-    secondaryAction: {
-      label: "View Notebook",
-      href: "https://github.com/ymbawa26/cs443-project-3-word-embeddings-som/blob/main/word_embeddings.ipynb",
-    },
+    live: "https://ymbawa26.github.io/cs443-project-3-word-embeddings-som/",
+    primaryAction: { label: "Open Demo", href: "https://ymbawa26.github.io/cs443-project-3-word-embeddings-som/" },
+    secondaryAction: { label: "View GitHub", href: "https://github.com/ymbawa26/cs443-project-3-word-embeddings-som" },
     accent: "sage",
   },
   {

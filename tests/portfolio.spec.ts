@@ -21,11 +21,15 @@ test("project and contact actions lead somewhere", async ({ page }) => {
   await page.goto("/projects");
 
   await expect(page.getByRole("link", { name: /Open Vercel/ }).first()).toHaveAttribute("href", /vercel\.app/);
-  await expect(page.getByRole("link", { name: "Open GitHub" }).first()).toHaveAttribute(
+  await expect(page.getByRole("link", { name: "Open Demo" }).first()).toHaveAttribute(
     "href",
-    "https://github.com/ymbawa26/cs443-project-4-rnn",
+    "https://ymbawa26.github.io/cs443-project-4-rnn/",
   );
   await expect(page.getByRole("heading", { name: "Word Embeddings and SOMs" })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Open Demo" }).nth(1)).toHaveAttribute(
+    "href",
+    "https://ymbawa26.github.io/cs443-project-3-word-embeddings-som/",
+  );
   await expect(page.getByRole("heading", { name: "Profits and Layoffs" })).toBeVisible();
   await expect(page.getByRole("link", { name: /Open Vercel/ })).toHaveCount(6);
   await expect(page.getByRole("link", { name: /Open Vercel/ }).first()).toHaveAttribute(
