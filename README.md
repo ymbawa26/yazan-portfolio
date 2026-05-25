@@ -13,14 +13,6 @@ Premium multi-page portfolio site for Yazan Bawaqna, built with Next.js App Rout
 - Resume download, contact actions, language section, and editable typed content
 - Built for Vercel deployment with no required environment variables
 
-## Run Locally
-
-```bash
-npm install
-npm run dev
-```
-
-Open `http://127.0.0.1:3000`.
 
 ## Update Content
 
