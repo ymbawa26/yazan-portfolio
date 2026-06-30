@@ -22,6 +22,38 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: "WorldCup Simulation",
+    repoName: "WorldCup",
+    description:
+      "An interactive World Cup tournament simulator with country selection, live match control, team identities, tactical breaks, substitutions, knockout brackets, news, and post-match reports.",
+    whyItMatters:
+      "It turns a sports analytics model into a playable product: probabilities, match events, tactics, fatigue, injuries, and tournament storytelling all meet in one user-facing experience.",
+    image:
+      "https://images.unsplash.com/photo-1518091043644-c1d4457512c6?auto=format&fit=crop&w=3840&q=85",
+    imageAlt: "A football pitch under stadium lights before a major match.",
+    stack: [
+      "Next.js",
+      "TypeScript",
+      "React",
+      "Football Analytics",
+      "Simulation",
+      "Probability Modeling",
+      "Playwright",
+      "Vercel",
+    ],
+    github: "https://github.com/ymbawa26/WorldCup",
+    live: "https://worldcup-simulation.vercel.app",
+    primaryAction: {
+      label: "Open Live App",
+      href: "https://worldcup-simulation.vercel.app",
+    },
+    secondaryAction: {
+      label: "View GitHub",
+      href: "https://github.com/ymbawa26/WorldCup",
+    },
+    accent: "ice",
+  },
+  {
     title: "Character RNN Text Generation",
     repoName: "cs443-project-4-rnn",
     description:

@@ -52,6 +52,9 @@ export function Hero() {
             animate={reduceMotion ? undefined : { opacity: 1, y: 0 }}
             transition={{ duration: 0.85, delay: 0.32 }}
           >
+            <a className="button button-primary" href="https://worldcup-simulation.vercel.app">
+              Check my latest project <ArrowDown size={17} />
+            </a>
             <Link className="button button-primary" href="/projects">
               View Projects <ArrowDown size={17} />
             </Link>
